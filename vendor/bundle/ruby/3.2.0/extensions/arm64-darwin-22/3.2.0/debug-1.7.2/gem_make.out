@@ -1,0 +1,19 @@
+current directory: /Users/yuto/workspace/techpit/techpit-clothes/vendor/bundle/ruby/3.2.0/gems/debug-1.7.2/ext/debug
+/Users/yuto/.rbenv/versions/3.2.0/bin/ruby -I /Users/yuto/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /Users/yuto/workspace/techpit/techpit-clothes/vendor/bundle/ruby/3.2.0/gems/debug-1.7.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230506-36064-gd3o40 sitelibdir\=./.gem.20230506-36064-gd3o40 clean
+
+current directory: /Users/yuto/workspace/techpit/techpit-clothes/vendor/bundle/ruby/3.2.0/gems/debug-1.7.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230506-36064-gd3o40 sitelibdir\=./.gem.20230506-36064-gd3o40
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/yuto/workspace/techpit/techpit-clothes/vendor/bundle/ruby/3.2.0/gems/debug-1.7.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230506-36064-gd3o40 sitelibdir\=./.gem.20230506-36064-gd3o40 install
+/opt/homebrew/bin/ginstall -c -m 0755 debug.bundle ./.gem.20230506-36064-gd3o40/debug
+
+current directory: /Users/yuto/workspace/techpit/techpit-clothes/vendor/bundle/ruby/3.2.0/gems/debug-1.7.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230506-36064-gd3o40 sitelibdir\=./.gem.20230506-36064-gd3o40 clean
