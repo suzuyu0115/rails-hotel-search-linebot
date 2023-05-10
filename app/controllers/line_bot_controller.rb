@@ -12,6 +12,10 @@ class LineBotController < ApplicationController
       when Line::Bot::Event::Message
         case event.type
         when Line::Bot::Event::MessageType::Text
+          message = {
+            type: 'text',
+            text: event.message['text']
+          }
         end
       end
     end
