@@ -16,9 +16,11 @@ class LineBotController < ApplicationController
             type: 'text',
             text: event.message['text']
           }
+          client.reply_message(event['replyToken'], message)
         end
       end
     end
+    head :ok
   end
 
   private
