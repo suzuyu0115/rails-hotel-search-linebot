@@ -12,6 +12,7 @@ class LineBotController < ApplicationController
       when Line::Bot::Event::Message
         case event.type
         when Line::Bot::Event::MessageType::Text
+          search_and_create_message(event.message['text'])
           message = {
             type: 'text',
             text: event.message['text']
@@ -32,7 +33,18 @@ class LineBotController < ApplicationController
     }
   end
 
-  def search_and_create_message()
+  def search_and_create_message(keyword)
     http_client = HTTPClient.new
+    url = 'https://app.rakuten.co.jp/services/api/Travel/KeywordHotelSearch/20170426'
+    query = {
+      'keyword' => keyword,
+      'applicationId' => ENV['RAKUTEN_APPID'],
+      'hits' => 5,
+      'responseType' => 'small',
+      'formatVersion' => 2
+    }
+    response = http_client.get(url, query)
+    response = JSON.parse(response.body)
+    p response['pagingInfo']
   end
 end
