@@ -56,11 +56,6 @@ class LineBotController < ApplicationController
         contents: set_carousel(response['hotels'])
       }
     end
-
-    message = {
-      type: 'text',
-      text: text
-    }
   end
 
     def set_carousel(hotels)
